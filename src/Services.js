@@ -20,8 +20,10 @@ export default class Services extends Component {
               <ul>
                 {servicesList.map(services => (
                   <>
-                    <img src="" />
-                    <li>{services.item}</li>
+                    <li>
+                    <img src="https://res.cloudinary.com/dkksvxoms/image/upload/v1578396776/Salon-n-Spa/service-images/check_xgwrto.png" src="check-icon" />
+                    {services.item}
+                    </li>
                   </>
                 ))}
               </ul>

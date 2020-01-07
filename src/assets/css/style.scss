@@ -24,6 +24,9 @@ body {
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .navbarMenu {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
   background: linear-gradient(to right, #aaaaff, #fcbaf8);
   overflow: hidden;
   padding: 0.5em;
@@ -112,4 +115,38 @@ h1{
 .service-image{
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.check-icon{
+  height: 100px;
+  width: 100px;
+  margin-right: 3px;
+  background-size: cover;
+}
+
+.colored-wrapper{
+  background: linear-gradient(to right, #aaaaff, #fcbaf8);
+}
+
+.button-contain{
+  display: flex;
+  justify-content: center;
+}
+
+.appointment-button{
+  font-weight: bold;
+  font-size: 16px;
+  padding: 15px;
+  color: $pink;
+  border-radius: 40px;
+  &:hover {
+    color: #eee; 
+    background-color: $purple;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease-in-out;
+  }
+  &:focus{
+    outline: none;
+  }
 }
