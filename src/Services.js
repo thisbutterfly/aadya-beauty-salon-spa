@@ -10,18 +10,20 @@ export default class Services extends Component {
         <div className="container">
           <div className="columns">
             <div className="column">
-              <img src="https://res.cloudinary.com/dkksvxoms/image/upload/v1578381962/Salon-n-Spa/service-images/services-image_upw6jw.jpg" className="service-image" />
+              <img
+                src="https://res.cloudinary.com/dkksvxoms/image/upload/v1578381962/Salon-n-Spa/service-images/services-image_upw6jw.jpg"
+                className="service-image"
+              />
             </div>
             <div className="column">
               <p className="subtitle">Best services around you</p>
               <ul>
-                <li>hair-cutting, colouring and styling</li>
-                <li>waxing and other forms of hair removal</li>
-                <li>nail treatments</li>
-                <li>facials and skin care treatments</li>
-                <li>tanning</li>
-                <li>massages</li>
-                <li>complementary care such as aromatherapy</li>
+                {servicesList.map(services => (
+                  <>
+                    <img src="" />
+                    <li>{services.item}</li>
+                  </>
+                ))}
               </ul>
             </div>
           </div>
@@ -30,3 +32,27 @@ export default class Services extends Component {
     );
   }
 }
+
+const servicesList = [
+  {
+    item: "Hair-cutting, colouring and styling"
+  },
+  {
+    item: "Waxing and other forms of hair removal"
+  },
+  {
+    item: "Nail treatments"
+  },
+  {
+    item: "Facials and skin care treatments"
+  },
+  {
+    item: "Tanning"
+  },
+  {
+    item: "Massages"
+  },
+  {
+    item: "Complementary care such as aromatherapy"
+  }
+];
