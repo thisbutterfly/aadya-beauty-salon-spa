@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: "Rubik", sans-serif !important;
+  background: #ffeeee;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#ddefbb), to(#ffeeee));
+  background: linear-gradient(to right, #ddefbb, #ffeeee);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.navbarMenu {
+  background: -webkit-gradient(linear, left top, right top, from(#aaaaff), to(#fcbaf8));
+  background: linear-gradient(to right, #aaaaff, #fcbaf8);
+  overflow: hidden;
+  padding: 0.5em;
+  border-bottom: 1px solid #fd80f5;
+}
+
+.navWide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.wideDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hyperLink {
+  font-size: 16px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.hyperLink:hover {
+  cursor: pointer;
+}
+
+.item {
+  font-weight: bold;
+  padding: 15px;
+}
+
+.item:hover {
+  color: #f2709c;
+  background-color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.navNarrow i {
+  float: left;
+  cursor: pointer;
+  color: #fff;
+}
+
+.navNarrow .narrowLinks {
+  display: none;
+}
+
+.hero-image {
+  background-image: url("https://res.cloudinary.com/dkksvxoms/image/upload/c_scale,w_1700/v1578373076/Salon-n-Spa/annie-spratt-Zxl_m4KVZDs-unsplash_dw2atd.jpg");
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+h1 {
+  color: #9334C5;
+  font-family: "Kaushan Script", cursive;
+}
+
+.design-line {
+  width: 5%;
+  height: 1px;
+  background-color: #918dca;
+}
+
+.rose {
+  background: url("https://res.cloudinary.com/dkksvxoms/image/upload/v1578376275/Salon-n-Spa/rose_lbfe2k.png");
+  background-size: contain;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50px;
+  height: 50px;
+}
+
+.about-images-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 4%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.about-image {
+  border-radius: 100%;
+  width: 250px;
+  height: 250px;
+  border: 10px solid  #aaaaff;
+}
+
+.service-image {
+  border-radius: 10px;
+}
+/*# sourceMappingURL=style.css.map */
