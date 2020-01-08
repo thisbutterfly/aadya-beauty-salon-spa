@@ -3,7 +3,7 @@ import React, { Component } from "react";
 export default class HeadingUnderline extends Component {
   render() {
     return (
-      <div className="section">
+      <div className="section header-underline">
         <div className="columns">
           <div
             className="column"
