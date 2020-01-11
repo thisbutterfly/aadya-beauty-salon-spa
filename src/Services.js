@@ -13,22 +13,24 @@ export default class Services extends Component {
               <img
                 src="https://res.cloudinary.com/dkksvxoms/image/upload/v1578381962/Salon-n-Spa/service-images/services-image_upw6jw.jpg"
                 className="service-image"
+                alt= "service-image"
               />
             </div>
             <div className="column">
-              <p className="subtitle">Best services around you</p>
+              <p className="subtitle has-text-black-ter is-size-4">Best services around you</p>
               <ul>
                 {servicesList.map(services => (
                   <>
-                    <li>
-                    <img src="https://res.cloudinary.com/dkksvxoms/image/upload/v1578396776/Salon-n-Spa/service-images/check_xgwrto.png" src="check-icon" />
-                    {services.item}
+                    <li className="columns is-vcentered" style={{padding: "5px"}}>
+                    <img src="https://res.cloudinary.com/dkksvxoms/image/upload/v1578396776/Salon-n-Spa/service-images/check_xgwrto.png" className="check-icon" alt= "service-list" />
+                    <span className="service-option">{services.item}</span>
                     </li>
                   </>
                 ))}
               </ul>
             </div>
           </div>
+          <div className="section" />
         </div>
       </div>
     );
@@ -43,18 +45,30 @@ const servicesList = [
     item: "Waxing and other forms of hair removal"
   },
   {
-    item: "Nail treatments"
+    item: "Nail treatments and manicure"
   },
   {
-    item: "Facials and skin care treatments"
+    item: "Facial Bleach and skin care treatments"
   },
   {
-    item: "Tanning"
+    item: "De-Tanning"
   },
   {
     item: "Massages"
   },
   {
-    item: "Complementary care such as aromatherapy"
+    item: "Pedicure"
+  },
+  {
+    item: "Threading"
+  },
+  {
+    item: "Hair Spa"
+  },
+  {
+    item: "Lotus whitening facial"
+  },
+  {
+    item: "Other packages and offera worth your money and time"
   }
 ];

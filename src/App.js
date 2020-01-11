@@ -5,6 +5,8 @@ import HeroPanel from "./HeroPanel";
 import About from "./About";
 import Services from "./Services";
 import Booking from "./Booking";
+import Gallery from "./Gallery";
+import ContactUs from "./ContactUs";
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
       <About />
       <Services />
       <Booking />
+      <Gallery />
+      <ContactUs />
     </div>
   );
 }

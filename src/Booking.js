@@ -52,7 +52,7 @@ export default class Booking extends Component {
             <p className="subtitle has-text-centered has-black-ter is-size-4">
               Want to make a booking or have a question?
             </p>
-            <div className="container button-contain">
+            <div className="section button-contain">
               <button
                 className="appointment-button"
                 onClick={() => this.openForm()}

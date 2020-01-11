@@ -27,6 +27,7 @@ export default class About extends Component {
             <img src="https://res.cloudinary.com/dkksvxoms/image/upload/v1578378875/Salon-n-Spa/about-images/about-image-1_xarj2f.jpg" alt= "about placeholder" className="about-image" />
             <img src="https://res.cloudinary.com/dkksvxoms/image/upload/v1578383064/Salon-n-Spa/about-images/noah-buscher-eCJiD00AJqs-unsplash_xqtxgl.jpg" alt= "about placeholder" className="about-image" />
           </div>
+          <div className = "section " />
         </div>
       </div>
     );

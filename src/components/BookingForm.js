@@ -1,54 +1,70 @@
 import React, { Component } from "react";
 import DatePicker from "react-date-picker";
+import { text } from "@storybook/addon-knobs";
+import { action } from "@storybook/addon-actions";
+import { Dropdown } from "react-bulma-components";
 
 export default class BookingForm extends Component {
   state = {
-    date: new Date()
+    date: new Date(),
+    selected: ""
   };
-  onChange = date => this.setState({ date });
+  onChange = (selected, date) => {
+    this.setState({ selected, date });
+  };
   render() {
     return (
-      <div>
+      <Dropdown.Item>
         <form>
-          <div class="field">
-            <label class="label">Name</label>
-            <div class="control">
+          <div className="field">
+            <label className="label">Name</label>
+            <div className="control">
               <input
-                class="input"
+                className="input"
                 type="text"
                 placeholder="Enter your name"
                 required
               />
             </div>
           </div>
-          <div class="field">
-            <label class="label">Email</label>
-            <div class="control">
+          <div className="field">
+            <label className="label">Email</label>
+            <div className="control">
               <input
-                class="input"
+                className="input"
                 type="text"
                 placeholder="Enter your email"
                 required
               />
             </div>
           </div>
-          <div class="field">
-            <label class="label">Phone Number</label>
-            <div class="control">
+          <div className="field">
+            <label className="label">Phone Number</label>
+            <div className="control">
               <input
-                class="input"
+                className="input"
                 type="text"
                 placeholder="Enter your phone number"
                 required
               />
             </div>
           </div>
-          <div class="field">
-            <label class="label">Choose Date</label>
+          <br />
+
+          <Dropdown onChange={action("select")} label={text("label", "")}>
+            <Dropdown.Item value="item">Select Services</Dropdown.Item>
+            <Dropdown.Item value="other">Other Dropdown item</Dropdown.Item>
+            <Dropdown.Item value="active">Active Dropdown item</Dropdown.Item>
+            <Dropdown.Item value="other 2">Other Dropdown item</Dropdown.Item>
+          </Dropdown>
+          
+          <div className="field">
+          <br />
+            <label className="label">Choose Date</label>
             <DatePicker onChange={this.onChange} value={this.state.date} />
           </div>
         </form>
-      </div>
+      </Dropdown.Item>
     );
   }
 }
