@@ -10,16 +10,16 @@ export default class ContactUs extends Component {
         <div className="contact-container columns">
           <div className="contact-wrap column has-text-weight-bold">
             <p className="header is-size-4">Call us at: </p>
-            <p className="subtitle is-size-5">91-9350895820</p>
+            <p className="subtitle is-size-5">91-8090182867</p>
           </div>
           <div className="contact-wrap column has-text-weight-bold">
             <p className="header is-size-4">Email us: </p>
-            <p className="subtitle is-size-5">vrlexpress.info@gmail.com</p>
+            <p className="subtitle is-size-5">xyz@gmail.com</p>
           </div>
           <div className="contact-wrap-two column has-text-weight-bold">
             <p className="header is-size-4">Address: </p>
             <p className="subtitle is-size-5">
-              Door No. 12/188, Thulasi Nagar.
+              Ved Nath Puram, Aziz Nagar, Madiyanva, Lucknow, Uttar Pradesh.
             </p>
           </div>
         </div>
