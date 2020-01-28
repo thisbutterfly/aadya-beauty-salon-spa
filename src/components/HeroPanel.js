@@ -7,7 +7,7 @@ export default class HeroPanel extends Component {
         <div className="hero is-fullheight">
           <div className="hero-body">
             <div className="container">
-              <h1 className="is-size-1 has-text-white-bis" >Aadya Beauty Saloon and Spa</h1>
+              <h1 className="is-size-1 has-text-white-bis" >Aadya Beauty Salon and Spa</h1>
             </div>
           </div>
         </div>

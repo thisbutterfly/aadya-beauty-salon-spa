@@ -11,7 +11,7 @@ export default class AboutPage extends Component {
           <HeadingUnderline />
           <div className="container">
             <p className="subtitle has-text-centered has-text-black-ter is-size-5">
-              Welcome to Aadya beauty saloon and spa. You will look like a goddess every
+              Welcome to Aadya beauty salon and spa. You will look like a goddess every
               day!
             </p>
             <p className="has-text-centered">
