@@ -46,7 +46,7 @@ export default class BookingPage extends Component {
         ) : (
           ""
         )}
-        <div className="section" style={{marginTop: "10%"}}>
+        <div className="section" style={{marginTop: "5%"}}>
           <h1 className="is-size-1 has-text-centered">Appointment</h1>
           <HeadingUnderline />
           <div className="container">

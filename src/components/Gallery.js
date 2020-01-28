@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import HeadingUnderline from "./HeadingUnderline";
+import {Link} from "react-router-dom";
 
 export default class Gallery extends Component {
   render() {
@@ -16,12 +17,14 @@ export default class Gallery extends Component {
             ))}
           </div>
           <div className="container button-contain">
+          <Link to="/gallery">
               <button
                 className="appointment-button"
                 style={{marginTop: "3%"}}
               >
                 SEE MORE
               </button>
+          </Link>
             </div>
         </div>
       </div>
@@ -30,6 +33,12 @@ export default class Gallery extends Component {
 }
 
 const imagesList = [
+  {
+    imageLink: "https://via.placeholder.com/300"
+  },
+  {
+    imageLink: "https://via.placeholder.com/300"
+  },
   {
     imageLink: "https://via.placeholder.com/300"
   },

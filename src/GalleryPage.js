@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import FooterOther from "./components/FooterOther";
 import HeadingUnderline from "./components/HeadingUnderline";
+import {Link} from "react-router-dom";
 
 export default class GalleryPage extends Component {
   render() {
@@ -22,14 +23,14 @@ export default class GalleryPage extends Component {
               ))}
             </div>
             <div className="container button-contain">
-              <a href="/">
+              <Link to="/">
                 <button
                   className="appointment-button"
                   style={{ marginTop: "3%" }}
                 >
                   RETURN TO HOME
                 </button>
-              </a>
+              </Link>
             </div>
           </div>
           <FooterOther />

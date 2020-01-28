@@ -1,5 +1,4 @@
 import React from "react";
-// import Navbar from "./components/Navbar";
 import AboutPage from "./AboutPage";
 import ServicesPage from "./ServicesPage";
 import BlogPage from "./BlogPage";
@@ -56,37 +55,3 @@ function App() {
 }
 
 export default App;
-
-{
-  /* <div> */
-}
-{
-  /* <Navbar /> */
-}
-{
-  /* <HomePage /> */
-}
-{
-  /* <AboutPage /> */
-}
-{
-  /* <ServicesPage /> */
-}
-{
-  /* <BookingPage />  */
-}
-{
-  /* <BlogPage /> */
-}
-{
-  /* <GalleryPage /> */
-}
-{
-  /* <ContactPage /> */
-}
-{
-  /* <ContactUs /> */
-}
-{
-  /* </div> */
-}
