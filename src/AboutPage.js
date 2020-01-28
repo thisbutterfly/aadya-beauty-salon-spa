@@ -11,17 +11,17 @@ export default class AboutPage extends Component {
           <HeadingUnderline />
           <div className="container">
             <p className="subtitle has-text-centered has-text-black-ter is-size-5">
-              Welcome to Aadya beauty sloon and spa. You will look like a goddess every
+              Welcome to Aadya beauty saloon and spa. You will look like a goddess every
               day!
             </p>
             <p className="has-text-centered">
-              Paradise products combine botanical and advanced cosmeceutical
+              Aadya beauty products combine botanical and advanced cosmeceutical
               ingredients with the Science of Beauty to bring you the ultimate
               in professional skincare in a retail form. Created from natural
               herbs, 100% safe for your skin, unique from other Spa treatments,
-              quality product from SpaLabs, special gifts & offers for you
-              created by Medical Professionals of Spa Lab.
-            </p>
+              quality products, special gifts & offers for you
+              created by Medical Professionals around the world.
+.            </p>
             <div className="about-images-container">
               <img
                 src="https://res.cloudinary.com/dkksvxoms/image/upload/v1578378875/Salon-n-Spa/about-images/about-image-3_qazdzf.jpg"
