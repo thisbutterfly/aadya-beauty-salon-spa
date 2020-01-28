@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import HeadingUnderline from "./components/HeadingUnderline";
 import BookingForm from "./components/BookingForm";
+import FooterOther from "./components/FooterOther";
 
 export default class BookingPage extends Component {
   state = {
@@ -45,7 +46,7 @@ export default class BookingPage extends Component {
         ) : (
           ""
         )}
-        <div className="section">
+        <div className="section" style={{marginTop: "10%"}}>
           <h1 className="is-size-1 has-text-centered">Appointment</h1>
           <HeadingUnderline />
           <div className="container">
@@ -62,6 +63,7 @@ export default class BookingPage extends Component {
             </div>
           </div>
         </div>
+        <FooterOther />
       </>
     );
   }
