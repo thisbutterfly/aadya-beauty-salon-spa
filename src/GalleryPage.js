@@ -2,36 +2,38 @@ import React, { Component } from "react";
 import FooterOther from "./components/FooterOther";
 import HeadingUnderline from "./components/HeadingUnderline";
 import { Link } from "react-router-dom";
+import $ from "jquery";
+// import
 
 export default class GalleryPage extends Component {
-//   $(window).load(function(){
-//     var $container = $('.portfolioContainer');
-//     $container.isotope({
-//         filter: '*',
-//         animationOptions: {
-//             duration: 750,
-//             easing: 'linear',
-//             queue: false
-//         }
-//     });
- 
-//     $('.portfolioFilter a').click(function(){
-//         $('.portfolioFilter .current').removeClass('current');
-//         $(this).addClass('current');
- 
-//         var selector = $(this).attr('data-filter');
-//         $container.isotope({
-//             filter: selector,
-//             animationOptions: {
-//                 duration: 750,
-//                 easing: 'linear',
-//                 queue: false
-//             }
-//          });
-//          return false;
-//     }); 
-// });
   render() {
+    $(window).on('load',function() {
+      var $container = $(".portfolioContainer");
+      $container.isotope({
+        filter: "*",
+        animationOptions: {
+          duration: 750,
+          easing: "linear",
+          queue: false
+        }
+      });
+
+      $(".portfolioFilter a").click(function() {
+        $(".portfolioFilter .current").removeClass("current");
+        $(this).addClass("current");
+
+        var selector = $(this).attr("data-filter");
+        $container.isotope({
+          filter: selector,
+          animationOptions: {
+            duration: 750,
+            easing: "linear",
+            queue: false
+          }
+        });
+        return false;
+      });
+    });
     return (
       <>
         <div className="section">
