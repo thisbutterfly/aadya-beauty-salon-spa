@@ -224,3 +224,22 @@ h1{
   padding: 15px;
   margin: 40px auto 0px auto;
 }
+.portfolioFilter {
+  padding: 15px 0;
+}
+
+.portfolioFilter a {
+  margin-right: 6px;
+  color: #666;
+  text-decoration: none;
+  border: 1px solid #ccc;
+  padding: 4px 15px;
+  border-radius: 50px;
+  display: inline-block;
+}
+
+.portfolioFilter a.current {
+  background: #9334C5;
+  border: 1px solid #9334C5;
+  color: #f9f9f9;
+}
