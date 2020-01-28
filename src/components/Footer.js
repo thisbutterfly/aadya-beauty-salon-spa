@@ -9,10 +9,7 @@ export default class Footer extends Component {
             <div className="column">
               <p className="header is-size-4 has-text-weight-bold">Information</p>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+              About Aadya Beauty Saloon and Spa, it is located in Ved Nath Puram, Aziz Nagar, Madiyanva, Lucknow, Uttar Pradesh. We are a dedicated team of beauticians aestheticians that aim to provide outstanding service to all of our customers. Come visit us today and enjoy our relaxing atmosphere while we make you look AMAZING.
               </p>
             </div>
             <div className="column">

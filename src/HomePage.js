@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+// import Navbar from "./components/Navbar"
 import HeroPanel from "./components/HeroPanel";
 import About from "./components/About";
 import Services from "./components/Services";
@@ -11,6 +12,7 @@ export default class HomePage extends Component {
   render() {
     return (
       <>
+        {/* <Navbar /> */}
         <HeroPanel />
         <About />
         <Services />
