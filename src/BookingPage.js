@@ -38,7 +38,7 @@ export default class BookingPage extends Component {
               </section>
               <footer className="modal-card-foot">
                 <button className="appointment-button" onClick={() => this.closeForm()}>
-                  Return
+                  Submit
                 </button>
               </footer>
             </div>
