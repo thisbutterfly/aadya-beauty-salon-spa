@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import HeadingUnderline from "./components/HeadingUnderline";
+import HeadingUnderline from "./HeadingUnderline";
 
 export default class Gallery extends Component {
   render() {
@@ -11,13 +11,14 @@ export default class Gallery extends Component {
           <div className="gallery-images">
             {imagesList.map(images => (
               <>
-                <img src={images.imageLink} alt="gallery-image" />
+                <img src={images.imageLink} alt="gallery-placeholder" className="gallery-picture" />
               </>
             ))}
           </div>
-          <div className="section button-contain">
+          <div className="container button-contain">
               <button
                 className="appointment-button"
+                style={{marginTop: "3%"}}
               >
                 SEE MORE
               </button>

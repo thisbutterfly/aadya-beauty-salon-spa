@@ -1,40 +1,52 @@
 import React, { Component } from "react";
-
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+// import GalleryPage from "../GalleryPage";
 export default class Navbar extends Component {
   render() {
     return (
-      <div>
-        <nav className="navbarMenu">
-          <div className="container navWide">
-            <div className="logo">
-              <img src="https://via.placeholder.com/200x50" />
+      // <Router>
+        <div>
+          <nav className="navbarMenu">
+            <div className="container navWide">
+              <div className="logo">
+                <img src="https://via.placeholder.com/200x50" />
+              </div>
+              <div className="wideDiv">
+                {/* <Link to="/"> */}
+                  <div className="item">HOME</div>
+                {/* </Link> */}
+                {/* <Link to="/about"> */}
+                  <div className="item">ABOUT</div>
+                {/* </Link> */}
+                {/* <Link to="/services"> */}
+                  <div className="item">SERVICES</div>
+                {/* </Link> */}
+                {/* <Link to="/booking"> */}
+                  <div className="item">BOOKING</div>
+                {/* </Link> */}
+                {/* <Link to="/blog"> */}
+                  <div className="item">BLOG</div>
+                {/* </Link> */}
+                {/* <Link to="/gallery"> */}
+                  <div className="item">GALLERY</div>
+                {/* </Link> */}
+                {/* <Link to="/item"> */}
+                  <div className="item">CONTACT US</div>
+                {/* </Link> */}
+              </div>
             </div>
-            <div className="wideDiv">
-              <a href="#" className="hyperLink">
-                <div className="item">HOME</div>
-              </a>
-              <a href="#" className="hyperLink">
-                <div className="item">ABOUT</div>
-              </a>
-              <a href="#" className="hyperLink">
-                <div className="item">SERVICES</div>
-              </a>
-              <a href="#" className="hyperLink">
-                <div className="item">BOOKING</div>
-              </a>
-              <a href="#" className="hyperLink">
-                <div className="item">BLOG</div>
-              </a>
-              <a href="#" className="hyperLink">
-                <div className="item">GALLERY</div>
-              </a>
-              <a href="#" className="hyperLink">
-                <div className="item">CONTACT US</div>
-              </a>
-            </div>
-          </div>
+          </nav>
+        </div>
+    );
+  }
+}
 
-          {/* <div className="navNarrow">
+{/* <Switch>
+  <Route path="/gallery" component={GalleryPage}/>
+</Switch>
+</Router> */}
+
+            {/* <div className="navNarrow">
             <div className="logo">
               <img src="https://via.placeholder.com/200x70" />
             </div>
@@ -63,8 +75,3 @@ export default class Navbar extends Component {
               </a>
             </div>
           </div> */}
-        </nav>
-      </div>
-    );
-  }
-}

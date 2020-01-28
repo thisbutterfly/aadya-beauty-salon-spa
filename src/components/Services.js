@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import HeadingUnderline from "./components/HeadingUnderline";
+import HeadingUnderline from "./HeadingUnderline";
 
 export default class Services extends Component {
   render() {
@@ -30,7 +30,6 @@ export default class Services extends Component {
               </ul>
             </div>
           </div>
-          <div className="section" />
         </div>
       </div>
     );

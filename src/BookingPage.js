@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import HeadingUnderline from "./components/HeadingUnderline";
 import BookingForm from "./components/BookingForm";
 
-export default class Booking extends Component {
+export default class BookingPage extends Component {
   state = {
     openFormModal: false
   };
@@ -45,14 +45,14 @@ export default class Booking extends Component {
         ) : (
           ""
         )}
-        <div className="section colored-wrapper">
+        <div className="section">
           <h1 className="is-size-1 has-text-centered">Appointment</h1>
           <HeadingUnderline />
           <div className="container">
             <p className="subtitle has-text-centered has-black-ter is-size-4">
               Want to make a booking or have a question?
             </p>
-            <div className="section button-contain">
+            <div className="container button-contain">
               <button
                 className="appointment-button"
                 onClick={() => this.openForm()}
