@@ -34,7 +34,7 @@ export default class GalleryPage extends Component {
               <TabPane tab="Spa" key="4">
                 <SpaTab />
               </TabPane>
-              <TabPane tab="Makeup" key="4">
+              <TabPane tab="Makeup" key="5">
                 <MakeupTab />
               </TabPane>
             </Tabs>
