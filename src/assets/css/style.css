@@ -10,12 +10,38 @@ body {
 
 .navbarMenu {
   width: 100%;
-  z-index: 10;
   background: -webkit-gradient(linear, left top, right top, from(#aaaaff), to(#fcbaf8));
   background: linear-gradient(to right, #aaaaff, #fcbaf8);
   overflow: hidden;
   padding: 0.5em;
   border-bottom: 1px solid #fd80f5;
+}
+
+@media (max-width: 768px) {
+  .navbarMenu {
+    display: none;
+  }
+}
+
+.navbar-menu-mobile {
+  background: -webkit-gradient(linear, left top, right top, from(#aaaaff), to(#fcbaf8));
+  background: linear-gradient(to right, #aaaaff, #fcbaf8);
+  overflow: hidden;
+  padding: 0.5em;
+}
+
+@media (max-width: 768px) {
+  .navbar-menu-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (min-width: 769px) {
+  .navbar-menu-mobile {
+    display: none;
+  }
 }
 
 .navWide {
@@ -31,6 +57,30 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wideDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wide-div-mobile {
+  background: -webkit-gradient(linear, left top, right top, from(#aaaaff), to(#fcbaf8));
+  background: linear-gradient(to right, #aaaaff, #fcbaf8);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -78,7 +128,7 @@ body {
 }
 
 h1 {
-  color: #9334C5;
+  color: #9334c5;
   font-family: "Kaushan Script", cursive;
 }
 
@@ -118,7 +168,7 @@ h1 {
   margin-top: 4%;
   width: 250px;
   height: 250px;
-  border: 10px solid  #aaaaff;
+  border: 10px solid #aaaaff;
 }
 
 .service-image {
@@ -165,7 +215,7 @@ h1 {
 
 .appointment-button:hover {
   color: #f5f5f5;
-  background-color: #9334C5;
+  background-color: #9334c5;
   cursor: pointer;
   border: none;
   -webkit-transition: all 0.3s ease-in-out;
@@ -210,17 +260,52 @@ h1 {
   padding: 3%;
 }
 
+@media (max-width: 768px) {
+  .contact-container {
+    margin: 40px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-container.columns {
+    margin: 40px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .contact-wrap {
   border-right: 2px solid #f5f5f5;
 }
 
+@media (max-width: 768px) {
+  .contact-wrap {
+    border-right: none;
+    border-bottom: 2px solid #f5f5f5;
+    padding: 20px;
+    margin: 0px 20px 0px 20px;
+  }
+}
+
 .wrapper-footer {
-  border-top: 5px solid  #aaaaff;
+  border-top: 5px solid #aaaaff;
   margin-top: -4%;
 }
 
+@media (max-width: 768px) {
+  .wrapper-footer {
+    border: none;
+  }
+}
+
 .wrapper-footer-other {
-  border-top: 5px solid  #aaaaff;
+  border-top: 5px solid #aaaaff;
   margin-top: 4%;
   height: 22vh;
 }
@@ -231,8 +316,29 @@ h1 {
   display: flex;
 }
 
+.content-wrapper-other {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .content-wrapper-other {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .information {
   width: 50%;
+}
+
+@media (max-width: 768px) {
+  .information {
+    width: 100%;
+  }
 }
 
 .footer-text {
@@ -241,7 +347,7 @@ h1 {
 }
 
 .footer-text a.hyperLink {
-  color: #9334C5;
+  color: #9334c5;
 }
 
 .footer-text a.hyperLink :hover {
@@ -278,8 +384,14 @@ h1 {
 }
 
 .portfolioFilter a.current {
-  background: #9334C5;
-  border: 1px solid #9334C5;
+  background: #9334c5;
+  border: 1px solid #9334c5;
   color: #f9f9f9;
+}
+
+@media (max-width: 686px) {
+  .video-player {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */

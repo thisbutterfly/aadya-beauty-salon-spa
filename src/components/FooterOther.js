@@ -5,7 +5,7 @@ export default class FooterOther extends Component {
     return (
       <div className="wrapper-footer-other section">
         <div className="container">
-          <div className="content-wrapper">
+          <div className="content-wrapper-other">
             <div className="information">
               <p className="header is-size-4 has-text-weight-bold">
                 Information

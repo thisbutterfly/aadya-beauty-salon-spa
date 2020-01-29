@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import ReactPlayer from "react-player";
 import HeadingUnderline from "./components/HeadingUnderline";
+import FooterOther from "./components/FooterOther";
 
 export default class BlogPage extends Component {
   render() {
@@ -13,7 +14,8 @@ export default class BlogPage extends Component {
             url="https://www.youtube.com/watch?v=uMOt1OshOJ8"
             playing
             controls
-            style={{ margin: "0 auto" }}
+            style={{ margin: "0 auto"}}
+            className="video-player"
           />
           <div className="blog-cards">
             {BlogList.map(blog => (
@@ -40,6 +42,7 @@ export default class BlogPage extends Component {
             ))}
           </div>
         </div>
+        <FooterOther />
       </div>
     );
   }

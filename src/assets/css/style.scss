@@ -1,36 +1,39 @@
-@import url('https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap");
 
 * {
   margin: 0px;
   padding: 0px;
 }
 
-$purple : #9334C5;
-$pink: #f2709c; 
-$heading-font: 'Kaushan Script', cursive;
+$purple: #9334c5;
+$pink: #f2709c;
+$heading-font: "Kaushan Script", cursive;
 
 body {
   font-family: "Rubik", sans-serif !important;
-  // background: #ffeeee; /* fallback for old browsers */
-  // background: -webkit-linear-gradient(
-  //   to right,
-  //   #ddefbb,
-  //   #ffeeee
-  // ); /* Chrome 10-25, Safari 5.1-6 */
-  // background: linear-gradient(
-  //   to right,
-  //   #ddefbb,
-  //   #ffeeee
-  // ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .navbarMenu {
   // position: fixed;
   width: 100%;
-  z-index: 10;
+  // z-indsex: 10;
   background: linear-gradient(to right, #aaaaff, #fcbaf8);
   overflow: hidden;
   padding: 0.5em;
   border-bottom: 1px solid #fd80f5;
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+.navbar-menu-mobile {
+  background: linear-gradient(to right, #aaaaff, #fcbaf8);
+  overflow: hidden;
+  padding: 0.5em;
+  @media (max-width: 768px) {
+    display: flex;
+  }
+  @media (min-width: 769px) {
+    display: none;
+  }
 }
 .navWide {
   display: flex;
@@ -38,6 +41,16 @@ body {
 }
 .wideDiv {
   display: flex;
+  align-items: center;
+}
+.wideDiv {
+  display: flex;
+  align-items: center;
+}
+.wide-div-mobile {
+  background: linear-gradient(to right, #aaaaff, #fcbaf8);
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
 .hyperLink {
@@ -52,7 +65,7 @@ body {
   font-weight: bold;
   padding: 15px;
   &:hover {
-    color: $pink; 
+    color: $pink;
     background-color: #fff;
     cursor: pointer;
     border-radius: 5px;
@@ -71,7 +84,7 @@ body {
   }
 }
 
-.hero-image{
+.hero-image {
   background-image: url("https://res.cloudinary.com/dkksvxoms/image/upload/c_scale,w_1700/v1578373076/Salon-n-Spa/annie-spratt-Zxl_m4KVZDs-unsplash_dw2atd.jpg");
   background-size: cover;
   height: 100%;
@@ -83,63 +96,62 @@ h1{
   font-family: $heading-font;
 }
 
-.design-line{
+.design-line {
   width: 5%;
   height: 1px;
-  background-color: #918dca;;
+  background-color: #918dca;
 }
 
-.rose{
-  background: url('https://res.cloudinary.com/dkksvxoms/image/upload/v1578376275/Salon-n-Spa/rose_lbfe2k.png');
+.rose {
+  background: url("https://res.cloudinary.com/dkksvxoms/image/upload/v1578376275/Salon-n-Spa/rose_lbfe2k.png");
   background-size: contain;
   display: flex;
   width: 50px;
   height: 50px;
 }
 
-.about-images-container{
+.about-images-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
 
-.about-image{
+.about-image {
   border-radius: 100%;
   margin-top: 4%;
   width: 250px;
   height: 250px;
-  border: 10px solid  #aaaaff;
+  border: 10px solid #aaaaff;
 }
 
-.service-image{
+.service-image {
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.check-icon{
+.check-icon {
   height: 25px;
   width: 25px;
   margin-right: 5px;
   background-size: cover;
-
 }
 
-.service-option{
+.service-option {
   font-size: 18px;
   line-height: 10px;
 }
 
-.colored-wrapper{
+.colored-wrapper {
   background: linear-gradient(to right, #aaaaff, #fcbaf8);
 }
 
-.button-contain{
+.button-contain {
   display: flex;
   justify-content: center;
 }
 
-.appointment-button{
+.appointment-button {
   border: none;
   font-weight: bold;
   font-size: 16px;
@@ -148,77 +160,106 @@ h1{
   background-color: #f5f5f5;
   border-radius: 40px;
   &:hover {
-    color: #f5f5f5; 
+    color: #f5f5f5;
     background-color: $purple;
     cursor: pointer;
     border: none;
     transition: all 0.3s ease-in-out;
   }
-  &:focus{
+  &:focus {
     outline: none;
   }
 }
 
-.header-underline{
-  @media(max-width: 768px){
+.header-underline {
+  @media (max-width: 768px) {
     display: none;
   }
 }
 
-.gallery-images{
+.gallery-images {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
-.gallery-picture{
+.gallery-picture {
   padding: 30px;
 }
 
-.contact-container{
+.contact-container {
   display: flex;
   justify-content: space-around;
   background: linear-gradient(to right, #aaaaff, #fcbaf8);
   text-align: center;
   border-radius: 10px;
   padding: 3%;
+  @media(max-width: 768px){
+    margin: 40px;
+    flex-direction: column;
+  }
 }
 
-.contact-wrap{
+.contact-container.columns{
+  @media(max-width: 768px){
+    margin: 40px;
+    flex-direction: column;
+  }
+}
+
+.contact-wrap {
   border-right: 2px solid #f5f5f5;
+  @media(max-width:768px){
+    border-right: none;
+    border-bottom: 2px solid #f5f5f5;
+    padding:20px;
+    margin: 0px 20px 0px 20px;
+  }
 }
 
-.wrapper-footer{
-  border-top: 5px solid  #aaaaff;
+.wrapper-footer {
+  border-top: 5px solid #aaaaff;
   margin-top: -4%;
+  @media(max-width: 768px){
+    border: none;
+  }
 }
 
-.wrapper-footer-other{
-  border-top: 5px solid  #aaaaff;
+.wrapper-footer-other {
+  border-top: 5px solid #aaaaff;
   margin-top: 4%;
   height: 22vh;
 }
-.content-wrapper{
+.content-wrapper {
   display: flex;
 }
-.information{
-  width: 50%;
+.content-wrapper-other {
+  display: flex;
+  @media(max-width: 768px){
+    flex-direction: column;
+  }
 }
-.footer-text{
+.information {
+  width: 50%;
+  @media(max-width: 768px){
+    width: 100%;
+  }
+}
+.footer-text {
   color: #0f0334;
   text-align: left;
-  a.hyperLink{
-    color: #9334C5;
-    :hover{
+  a.hyperLink {
+    color: #9334c5;
+    :hover {
       color: #f2709c;
     }
   }
 }
-.blog-cards{
+.blog-cards {
   display: flex;
   // padding: 30px;
   flex-wrap: wrap;
 }
-.card{
+.card {
   height: auto;
   width: 300px;
   padding: 15px;
@@ -239,7 +280,12 @@ h1{
 }
 
 .portfolioFilter a.current {
-  background: #9334C5;
-  border: 1px solid #9334C5;
+  background: #9334c5;
+  border: 1px solid #9334c5;
   color: #f9f9f9;
+}
+.video-player{
+  @media(max-width: 686px){
+    display: none;
+  }
 }
