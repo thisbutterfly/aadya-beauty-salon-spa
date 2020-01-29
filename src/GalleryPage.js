@@ -3,6 +3,11 @@ import FooterOther from "./components/FooterOther";
 import HeadingUnderline from "./components/HeadingUnderline";
 import { Link } from "react-router-dom";
 import { Tabs } from "antd";
+import MakeupTab from "./elements/MakeupTab";
+import CosmeticsTab from "./elements/CosmeticsTab";
+import HairTab from "./elements/HairTab";
+import SpaTab from "./elements/SpaTab";
+import AllImagesTab from "./elements/AllImagesTab";
 
 export default class GalleryPage extends Component {
   callback = key => {
@@ -17,17 +22,20 @@ export default class GalleryPage extends Component {
           <HeadingUnderline />
           <div className="container">
             <Tabs defaultActiveKey="1" onChange={() => this.callback()}>
-              <TabPane tab="Tab 1" key="1">
-                Content of Tab Pane 1
+              <TabPane tab="All categories" key="1">
+                <AllImagesTab />  
               </TabPane>
-              <TabPane tab="Tab 2" key="2">
-                Content of Tab Pane 2
+              <TabPane tab="Cosmetics" key="2">
+                <CosmeticsTab />
               </TabPane>
-              <TabPane tab="Tab 3" key="3">
-                Content of Tab Pane 3
+              <TabPane tab="Hair" key="3">
+                <HairTab />
               </TabPane>
-              <TabPane tab="Tab 4" key="4">
-                Content of Tab Pane 3
+              <TabPane tab="Spa" key="4">
+                <SpaTab />
+              </TabPane>
+              <TabPane tab="Makeup" key="4">
+                <MakeupTab />
               </TabPane>
             </Tabs>
           </div>
