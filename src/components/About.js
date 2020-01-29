@@ -6,7 +6,7 @@ export default class About extends Component {
     return (
       <div className="section">
         <h1 className="is-size-1 has-text-centered">
-        Welcome to Aadya Beauty Salon and Spa
+        Welcome to Aadya Beauty Adda
         </h1>
         <HeadingUnderline />
         <div className="container">

@@ -18,18 +18,9 @@ export default class SpaTab extends Component{
 
 const SpaImages = [
     {
-        imgLink: "https://via.placeholder.com/250"
+        imgLink: "https://res.cloudinary.com/dkksvxoms/image/upload/c_scale,w_250,h_350/v1580300101/Salon-n-Spa/spa/spa2_ykb6gv.jpg"
     },
     {
-        imgLink: "https://via.placeholder.com/250"
-    },
-    {
-        imgLink: "https://via.placeholder.com/250"
-    },
-    {
-        imgLink: "https://via.placeholder.com/250"
-    },
-    {
-        imgLink: "https://via.placeholder.com/250"
-    },
+        imgLink: "https://res.cloudinary.com/dkksvxoms/image/upload/c_scale,w_250,h_350/v1580300101/Salon-n-Spa/spa/spa_of7gyi.jpg"
+    }
 ]

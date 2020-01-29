@@ -12,7 +12,7 @@ export default class Gallery extends Component {
           <div className="gallery-images">
             {imagesList.map(images => (
               <>
-                <img src={images.imageLink} alt="gallery-placeholder" className="gallery-picture" />
+                <img src={images.imgLink} alt="gallery-placeholder" className="gallery-picture" />
               </>
             ))}
           </div>
@@ -34,21 +34,21 @@ export default class Gallery extends Component {
 
 const imagesList = [
   {
-    imageLink: "https://via.placeholder.com/300"
-  },
-  {
-    imageLink: "https://via.placeholder.com/300"
-  },
-  {
-    imageLink: "https://via.placeholder.com/300"
-  },
-  {
-    imageLink: "https://via.placeholder.com/300"
-  },
-  {
-    imageLink: "https://via.placeholder.com/300"
-  },
-  {
-    imageLink: "https://via.placeholder.com/300"
-  }
+    imgLink: "https://res.cloudinary.com/dkksvxoms/image/upload/c_scale,w_300,h_300/v1580300356/Salon-n-Spa/cosmetics/cosmetics4_nxy1uu.jpg"
+},
+{
+    imgLink: "https://res.cloudinary.com/dkksvxoms/image/upload/c_scale,w_300,h_300/v1580300355/Salon-n-Spa/cosmetics/cosmetics_f3fxfj.jpg"
+},
+{
+    imgLink: "https://res.cloudinary.com/dkksvxoms/image/upload/c_scale,w_300,h_300/v1580300356/Salon-n-Spa/cosmetics/cosmetics3_ydm6bx.jpg"
+},
+{
+    imgLink: "https://res.cloudinary.com/dkksvxoms/image/upload/c_scale,w_300,h_300/v1580300355/Salon-n-Spa/cosmetics/cosmetics2_zp5kok.jpg"
+},
+{
+    imgLink: "https://res.cloudinary.com/dkksvxoms/image/upload/c_scale,w_300,h_300/v1580299742/Salon-n-Spa/hair/hair5_tucijr.jpg"
+},
+{
+    imgLink: "https://res.cloudinary.com/dkksvxoms/image/upload/c_scale,w_300,h_300/v1580299742/Salon-n-Spa/hair/hair4_n1dghd.jpg"
+},
 ];

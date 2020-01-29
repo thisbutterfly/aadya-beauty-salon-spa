@@ -30,7 +30,7 @@ export default class App extends Component {
           <div className="container navWide">
             <div className="logo">
               <img
-                src="https://via.placeholder.com/200x50"
+                src="https://res.cloudinary.com/dkksvxoms/image/upload/c_scale,w_50,h_50/v1580298177/Salon-n-Spa/adda_a4ottr.png"
                 alt="logo-placeholder"
               />
             </div>
@@ -62,7 +62,7 @@ export default class App extends Component {
         <nav className="navbar-menu-mobile">
           <div className="container navWide">
             <div className="logo">
-              <img src="https://via.placeholder.com/200x50" alt="logo" />
+              <img src="https://res.cloudinary.com/dkksvxoms/image/upload/v1580298177/Salon-n-Spa/adda_a4ottr.png" alt="logo" />
             </div>
             <h1
               className="is-size-3 has-text-white"
