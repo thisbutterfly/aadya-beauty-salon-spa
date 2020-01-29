@@ -18,18 +18,18 @@ export default class HairTab extends Component{
 
 const HairImages = [
     {
-        imgLink: "https://via.placeholder.com/300"
+        imgLink: "https://via.placeholder.com/250"
     },
     {
-        imgLink: "https://via.placeholder.com/300"
+        imgLink: "https://via.placeholder.com/250"
     },
     {
-        imgLink: "https://via.placeholder.com/300"
+        imgLink: "https://via.placeholder.com/250"
     },
     {
-        imgLink: "https://via.placeholder.com/300"
+        imgLink: "https://via.placeholder.com/250"
     },
     {
-        imgLink: "https://via.placeholder.com/300"
+        imgLink: "https://via.placeholder.com/250"
     },
 ]

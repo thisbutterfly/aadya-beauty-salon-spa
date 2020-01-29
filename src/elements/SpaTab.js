@@ -18,18 +18,18 @@ export default class SpaTab extends Component{
 
 const SpaImages = [
     {
-        imgLink: "https://via.placeholder.com/300"
+        imgLink: "https://via.placeholder.com/250"
     },
     {
-        imgLink: "https://via.placeholder.com/300"
+        imgLink: "https://via.placeholder.com/250"
     },
     {
-        imgLink: "https://via.placeholder.com/300"
+        imgLink: "https://via.placeholder.com/250"
     },
     {
-        imgLink: "https://via.placeholder.com/300"
+        imgLink: "https://via.placeholder.com/250"
     },
     {
-        imgLink: "https://via.placeholder.com/300"
+        imgLink: "https://via.placeholder.com/250"
     },
 ]

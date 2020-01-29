@@ -18,18 +18,18 @@ export default class AllImagesTab extends Component{
 
 const AllImages = [
     {
-        imgLink: "https://via.placeholder.com/300"
+        imgLink: "https://via.placeholder.com/250"
     },
     {
-        imgLink: "https://via.placeholder.com/300"
+        imgLink: "https://via.placeholder.com/250"
     },
     {
-        imgLink: "https://via.placeholder.com/300"
+        imgLink: "https://via.placeholder.com/250"
     },
     {
-        imgLink: "https://via.placeholder.com/300"
+        imgLink: "https://via.placeholder.com/250"
     },
     {
-        imgLink: "https://via.placeholder.com/300"
+        imgLink: "https://via.placeholder.com/250"
     },
 ]
