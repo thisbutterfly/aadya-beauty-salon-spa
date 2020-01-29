@@ -10,11 +10,11 @@ export default class ContactUs extends Component {
         <div className="contact-container columns">
           <div className="contact-wrap column has-text-weight-bold">
             <p className="header is-size-4">Call us at: </p>
-            <p className="subtitle is-size-5">91-8090182867</p>
+            <p className="subtitle is-size-5">91-9305164178</p>
           </div>
           <div className="contact-wrap column has-text-weight-bold">
             <p className="header is-size-4">Email us: </p>
-            <p className="subtitle is-size-5">xyz@gmail.com</p>
+            <p className="subtitle is-size-5">aadyabeautyadda@gmail.com</p>
           </div>
           <div className="contact-wrap-two column has-text-weight-bold">
             <p className="header is-size-4">Address: </p>
