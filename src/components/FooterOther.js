@@ -23,7 +23,7 @@ export default class FooterOther extends Component {
                   <input
                     className="input is-normal"
                     type="text"
-                    placeholder="Find a repository"
+                    placeholder="Enter your email"
                   />
                 </div>
                 <div class="control">
