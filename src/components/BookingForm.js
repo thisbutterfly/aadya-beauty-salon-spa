@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import DatePicker from "react-date-picker";
 import axios from "axios";
 
-const API_PATH = "http://localhost:3000/react-contact-form/api/index.php";
+const API_PATH = "https://localhost:3000";
 export default class BookingForm extends Component {
   state = {
     date: new Date(),
@@ -12,7 +12,6 @@ export default class BookingForm extends Component {
     phoneNumber: "",
     service: "",
     mailSent: false,
-    error: null
   };
   onChange = (selected, date) => {
     this.setState({ selected, date });
@@ -31,7 +30,7 @@ export default class BookingForm extends Component {
           mailSent: result.data.sent
         });
       })
-      .catch(error => this.setState({ error: error.message }));
+      .catch(error => console.log(error));
   }
   render() {
     return (
