@@ -25,7 +25,7 @@ export default class Footer extends Component {
                   />
                 </div>
                 <div class="control">
-                  <a class="button is-info is-normal">Search</a>
+                  <a class="button is-info is-normal">Submit</a>
                 </div>
               </div>
               <br />
