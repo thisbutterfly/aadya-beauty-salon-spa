@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import { Link, BrowserRouter, Route, Switch } from "react-router-dom";
+
 import AboutPage from "./AboutPage";
 import ServicesPage from "./ServicesPage";
 import BlogPage from "./BlogPage";
@@ -6,7 +8,7 @@ import BookingPage from "./BookingPage";
 import ContactPage from "./ContactPage";
 import HomePage from "./HomePage";
 import GalleryPage from "./GalleryPage";
-import { Link, BrowserRouter, Route, Switch } from "react-router-dom";
+import NotFoundPage from "./NotFoundPage";
 
 export default class App extends Component {
   state = {
@@ -112,6 +114,7 @@ export default class App extends Component {
           <Route path="/blog" component={BlogPage} />
           <Route path="/gallery" component={GalleryPage} />
           <Route path="/contact" component={ContactPage} />
+          <Route path="*" component={NotFoundPage} />
         </Switch>
       </BrowserRouter>
     );
