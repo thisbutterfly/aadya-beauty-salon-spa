@@ -31,13 +31,6 @@ export default class Footer extends Component {
               <br />
             </div>
           </div>
-          <p className="footer-text">
-          2020 Built with <span>❤️</span> by
-          {` `}
-          <a href="http://sjjs.in/" className="hyperLink">
-            S.J.J.S. Pvt. Ltd.
-          </a>
-        </p>
         </div>
       </div>
     );
