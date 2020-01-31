@@ -29,10 +29,12 @@ export default class App extends Component {
         <nav className="navbarMenu">
           <div className="container navWide">
             <div className="logo">
-              <img
-                src="https://res.cloudinary.com/dkksvxoms/image/upload/c_scale,w_50,h_50/v1580298177/Salon-n-Spa/adda_a4ottr.png"
-                alt="logo-placeholder"
-              />
+              <Link to="/">
+                <img
+                  src="https://res.cloudinary.com/dkksvxoms/image/upload/c_scale,w_50,h_50/v1580298177/Salon-n-Spa/adda_a4ottr.png"
+                  alt="logo-placeholder"
+                />
+              </Link>
             </div>
             <div className="wideDiv">
               <Link to="/">
@@ -62,7 +64,10 @@ export default class App extends Component {
         <nav className="navbar-menu-mobile">
           <div className="container navWide">
             <div className="logo">
-              <img src="https://res.cloudinary.com/dkksvxoms/image/upload/v1580298177/Salon-n-Spa/adda_a4ottr.png" alt="logo" />
+              <img
+                src="https://res.cloudinary.com/dkksvxoms/image/upload/c_scale,w_50,h_50/v1580298177/Salon-n-Spa/adda_a4ottr.png"
+                alt="logo"
+              />
             </div>
             <h1
               className="is-size-3 has-text-white"
@@ -72,33 +77,33 @@ export default class App extends Component {
             </h1>
           </div>
         </nav>
-          {showDropdown ? (
-            <div className="wide-div-mobile">
-              <Link to="/" onClick= {()=> this.closeDropdown()}>
-                <div className="item">HOME</div>
-              </Link>
-              <Link to="/about" onClick= {()=> this.closeDropdown()}>
-                <div className="item">ABOUT</div>
-              </Link>
-              <Link to="/services" onClick= {()=> this.closeDropdown()}>
-                <div className="item">SERVICES</div>
-              </Link>
-              <Link to="/booking" onClick= {()=> this.closeDropdown()}>
-                <div className="item">BOOKING</div>
-              </Link>
-              <Link to="/blog" onClick= {()=> this.closeDropdown()}>
-                <div className="item">BLOG</div>
-              </Link>
-              <Link to="/gallery" onClick= {()=> this.closeDropdown()}>
-                <div className="item">GALLERY</div>
-              </Link>
-              <Link to="/contact" onClick= {()=> this.closeDropdown()}>
-                <div className="item">CONTACT US</div>
-              </Link>
-            </div>
-          ) : (
-            ""
-          )}
+        {showDropdown ? (
+          <div className="wide-div-mobile">
+            <Link to="/" onClick={() => this.closeDropdown()}>
+              <div className="item">HOME</div>
+            </Link>
+            <Link to="/about" onClick={() => this.closeDropdown()}>
+              <div className="item">ABOUT</div>
+            </Link>
+            <Link to="/services" onClick={() => this.closeDropdown()}>
+              <div className="item">SERVICES</div>
+            </Link>
+            <Link to="/booking" onClick={() => this.closeDropdown()}>
+              <div className="item">BOOKING</div>
+            </Link>
+            <Link to="/blog" onClick={() => this.closeDropdown()}>
+              <div className="item">BLOG</div>
+            </Link>
+            <Link to="/gallery" onClick={() => this.closeDropdown()}>
+              <div className="item">GALLERY</div>
+            </Link>
+            <Link to="/contact" onClick={() => this.closeDropdown()}>
+              <div className="item">CONTACT US</div>
+            </Link>
+          </div>
+        ) : (
+          ""
+        )}
         <Switch>
           <Route exact path="/" component={HomePage} />
           <Route exact path="/about" component={AboutPage} />
