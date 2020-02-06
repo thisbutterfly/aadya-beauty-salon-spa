@@ -56,8 +56,6 @@ export default class Article extends Component {
             nulla facilisi etiam dignissim diam quis enim lobortis scelerisque.
             Sit amet massa vitae tortor condimentum lacinia quis vel.
           </p>
-          <br />
-          <br />
           <div className="card-content">
             <div class="media">
               <div class="media-left">
