@@ -9,6 +9,7 @@ import ContactPage from "./ContactPage";
 import HomePage from "./HomePage";
 import GalleryPage from "./GalleryPage";
 import NotFoundPage from "./NotFoundPage";
+import Article from "./Article";
 
 export default class App extends Component {
   state = {
@@ -114,6 +115,7 @@ export default class App extends Component {
           <Route path="/blog" component={BlogPage} />
           <Route path="/gallery" component={GalleryPage} />
           <Route path="/contact" component={ContactPage} />
+          <Route path="/article" component={Article} />
           <Route path="*" component={NotFoundPage} />
         </Switch>
       </BrowserRouter>
