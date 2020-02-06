@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import HeadingUnderline from "./components/HeadingUnderline";
 import FooterOther from "./components/FooterOther";
+import {Link} from "react-router-dom";
 
 export default class Article extends Component {
   render() {
@@ -8,7 +9,7 @@ export default class Article extends Component {
       <div className="section">
         <h1 className="is-size-1 has-text-centered">Heading of Blog</h1>
         <HeadingUnderline />
-        <div className="container" style={{padding: "30px"}}>
+        <div className="container" style={{ padding: "30px" }}>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Nec
@@ -71,6 +72,11 @@ export default class Article extends Component {
                 <p class="subtitle is-6">@johnsmith</p>
               </div>
             </div>
+          </div>
+          <div className="container button-contain">
+            <Link to="/blog">
+              <button className="appointment-button">Return</button>
+            </Link>
           </div>
         </div>
         <FooterOther />
