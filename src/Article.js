@@ -8,7 +8,7 @@ export default class Article extends Component {
       <div className="section">
         <h1 className="is-size-1 has-text-centered">Heading of Blog</h1>
         <HeadingUnderline />
-        <div className="container">
+        <div className="container" style={{padding: "30px"}}>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Nec
