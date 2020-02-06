@@ -18,16 +18,16 @@ export default class FooterOther extends Component {
               <p className="header is-size-4 has-text-weight-bold">
                 Subscribe to our newsletter below
               </p>
-              <div class="field has-addons">
-                <div class="control">
+              <div className="field has-addons">
+                <div className="control">
                   <input
                     className="input is-normal"
                     type="text"
                     placeholder="Enter your email"
                   />
                 </div>
-                <div class="control">
-                  <a class="button is-info is-normal">Submit</a>
+                <div className="control">
+                  <a className="button is-info is-normal">Submit</a>
                 </div>
               </div>
               <br />

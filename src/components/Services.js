@@ -13,17 +13,26 @@ export default class Services extends Component {
               <img
                 src="https://res.cloudinary.com/dkksvxoms/image/upload/v1578381962/Salon-n-Spa/service-images/services-image_upw6jw.jpg"
                 className="service-image"
-                alt= "service-image"
+                alt="service-image"
               />
             </div>
             <div className="column">
-              <p className="subtitle has-text-black-ter is-size-4">Best services around you</p>
+              <p className="subtitle has-text-black-ter is-size-4">
+                Best services around you
+              </p>
               <ul>
                 {servicesList.map(services => (
                   <>
-                    <li className="columns is-vcentered" style={{padding: "5px"}}>
-                    <img src="https://res.cloudinary.com/dkksvxoms/image/upload/v1578396776/Salon-n-Spa/service-images/check_xgwrto.png" className="check-icon" alt= "service-list" />
-                    <span className="service-option">{services.item}</span>
+                    <li
+                      className="columns is-vcentered"
+                      style={{ padding: "5px" }}
+                    >
+                      <img
+                        src="https://res.cloudinary.com/dkksvxoms/image/upload/v1578396776/Salon-n-Spa/service-images/check_xgwrto.png"
+                        className="check-icon"
+                        alt="service-list"
+                      />
+                      <span className="service-option">{services.item}</span>
                     </li>
                   </>
                 ))}

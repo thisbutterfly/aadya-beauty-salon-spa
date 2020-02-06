@@ -49,7 +49,7 @@ export default class BookingForm extends Component {
 
         {servicesList.map(services=>(
         <div className="">
-          <label class="checkbox">
+          <label className="checkbox">
             <input type="checkbox" />
             {services.itemName}
           </label>
