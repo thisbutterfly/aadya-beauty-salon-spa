@@ -21,11 +21,12 @@ export default class Services extends Component {
                 Best services around you
               </p>
               <ul>
-                {servicesList.map(services => (
+                {servicesList.map((services,i) => (
                   <>
                     <li
                       className="columns is-vcentered"
                       style={{ padding: "5px" }}
+                      key={i}
                     >
                       <img
                         src="https://res.cloudinary.com/dkksvxoms/image/upload/v1578396776/Salon-n-Spa/service-images/check_xgwrto.png"
